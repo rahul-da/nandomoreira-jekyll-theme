@@ -1,0 +1,67 @@
+#permalink   : /:title/
+markdown    : kramdown
+highlighter : pygments
+
+paginate: 2 #6
+paginate_path: "/page/:num"
+
+baseurl: "/nandomoreira-jekyll-theme" # change to empty string ""
+domain_name: nandomoreira.me
+google_analytics: UA-52446115-1
+
+source:      source
+destination: _site
+
+# cover: /assets/images/header-cover.png
+
+# site title, description, meta_description, meta_keywords
+# Details for the RSS feed generator
+name: Rahul Das
+title: Rahul Das 
+description: "Data Scientist, Machine Learning"
+meta_description: "Building Machine Learning Algorithms and dealing with datas"
+meta_keywords: "Python, Matlab, R, C++, C, Machine Learning, Data Science"
+url: http://nandomoreira.me
+production_url: http://nandomoreira.me
+repo: https://github.com/nandomoreirame/nandomoreira-jekyll-theme
+disqus_shortname: "nandothemes"
+rss_path: source/
+author:
+  name      : Rahul Das
+  image     : /assets/images/author.jpg
+  email     : rahulreynoldindia@gmail.com
+  url       : http://rahulreynold@iitkgp.ac.in
+  facebook  : https://www.facebook.com/rahul.reynold.3
+  twitter   : http://twitter.com/nandomoreirame
+  instagram : http://instagram.com/nandomoreira.me
+  github    : https://github.com/rahul-da
+  linkedin  : https://www.linkedin.com/in/rahul-das-a7258112a/
+  bio       : "Data Science Enthusiast, Machine Learning, Applied Mathematics, Competitive Programming"
+
+# thought
+thought:
+  text: Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.
+  author: Pele
+
+# Plugin: jekyll-assets
+assets:
+  dirname: /assets
+  baseurl: /nandomoreira-jekyll-theme/assets/ # change to /assets/
+  sources:
+    - assets/images
+    - assets/fonts
+    - assets/css
+    - assets/js
+  cache: true
+  gzip: [ text/css, application/javascript ]
+
+# Compress HTML
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  ignore:
+    envs: all
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
